@@ -16,13 +16,13 @@ public class Obstacle : MonoBehaviour
         if(transform.position.x < -15f)
         {
             Destroy(gameObject);
-    }
-            if (transform.position.x > 15f)
-            {
-                Destroy(gameObject);
-            }
-
         }
+
+        if (transform.position.x > 15f)
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
 
