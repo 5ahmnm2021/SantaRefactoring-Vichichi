@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("Jump");
 
         GameManager.instance.IncrementScore();
-        Debug.Log("DeleteMe");
     }
 
     private bool SetGameOverTrue()
