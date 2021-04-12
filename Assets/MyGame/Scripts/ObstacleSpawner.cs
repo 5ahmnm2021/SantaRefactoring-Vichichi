@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
+    private const string SpawnRoutine = "Spawn";
+
     public static ObstacleSpawner instance;
 
     public GameObject[] obstacles;
@@ -21,7 +23,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine("Spawn");
+        StartCoroutine(SpawnRoutine);
     }
 
     IEnumerator Spawn()
