@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
     Animator anim, anim2, anim3, anim4, anim5;
     [SerializeField] float jumpForce;
     
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,10 +20,6 @@ public class PlayerController : MonoBehaviour
             {
                 jump();
             }
-
-
-
-
         }
     }
 
@@ -63,8 +58,4 @@ public class PlayerController : MonoBehaviour
             gameOver = SetGameOverTrue();
         }
     }
-
-
-
-
 }
